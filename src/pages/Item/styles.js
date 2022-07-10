@@ -6,5 +6,12 @@ export const styleSheet ={
         height: '90vh',
         width: '100vw',
         backgroundColor:'gray'
+    },
+    title:{
+        display: 'flex',
+        flexWrap: 'wrap',
+        flexDirection: 'column',
+        alignItems:'center',
+        justifyContent:'center'
     }
 }
