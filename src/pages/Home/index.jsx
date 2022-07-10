@@ -39,7 +39,6 @@ class Home extends Component {
                 {/*<Link to="/">*/}
                     <div className={classes.load_container}>
                         <div className={classes.card}>
-
                             <Grid item lg={12} md={6} sm={6} xm={6}>
                                 <Card variant="outlined" sx={{maxWidth: 400}}>
 
