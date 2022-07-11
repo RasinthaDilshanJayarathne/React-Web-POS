@@ -8,6 +8,7 @@ import ijse_logo from "../../assets/img/ijse_logo.png"
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import GDSEButton from "../../components/common/Button";
+import { Link } from 'react-router-dom';
 
 class Home extends Component {
 
@@ -41,24 +42,32 @@ class Home extends Component {
                             </Typography>
                         </div>
                         <div className={classes.nav_btn}>
-                            <GDSEButton size="small" variant="contained" label="Home"
-                                        onClick={() => {
+                            <Link to="/">
+                                <GDSEButton size="small" variant="contained" label="Home"
+                                            onClick={() => {
 
-                                        }}
-                                        style={{marginLeft: '15px',marginTop:'2px'}}
-                            />
-                            <GDSEButton size="small" variant="contained" label="Customer"
-                                        onClick={() => {
+                                            }}
+                                            style={{marginLeft: '15px',marginTop:'2px'}}
+                                />
+                            </Link>
+                            <Link to="/customer">
+                                <GDSEButton size="small" variant="contained" label="Customer"
+                                            onClick={() => {
 
-                                        }}
-                                        style={{marginLeft: '15px',marginTop:'2px'}}
-                            />
-                            <GDSEButton size="small" variant="contained" label="Item"
-                                        onClick={() => {
+                                            }}
+                                            style={{marginLeft: '15px',marginTop:'2px'}}
+                                />
+                            </Link>
+                            <Link to="/item">
+                                <GDSEButton size="small" variant="contained" label="Item"
+                                            onClick={() => {
 
-                                        }}
-                                        style={{marginLeft: '15px',marginTop:'2px'}}
-                            />
+                                            }}
+                                            style={{marginLeft: '15px',marginTop:'2px'}}
+                                />
+                            </Link>
+
+
                             <GDSEButton size="small" variant="contained" label="Order"
                                         onClick={() => {
 
@@ -69,7 +78,6 @@ class Home extends Component {
                     </Grid>
                 </div>
 
-                {/*<Link to="/">*/}
                 <div className={classes.load_container}>
                     <div className={classes.card}>
                         <Grid item lg={12} md={6} sm={6} xm={6}>
@@ -77,7 +85,7 @@ class Home extends Component {
 
                                 <CardHeader
                                     title="Customer Manage"
-                                    subheader="September 14, 2016"
+                                    subheader="July 11, 2022"
                                 />
                                 <CardMedia
                                     component="img"
@@ -86,10 +94,8 @@ class Home extends Component {
                                     alt="Paella dish"
                                 />
                                 <CardContent>
-                                    <Typography variant="body2" color="text.secondary">
-                                        This impressive paella is a perfect party dish and a fun meal to cook
-                                        together with your guests. Add 1 cup of frozen peas along with the mussels,
-                                        if you like.
+                                    <Typography variant="h2" color="text.secondary">
+                                        05
                                     </Typography>
                                 </CardContent>
                                 <CardContent>
@@ -117,7 +123,7 @@ class Home extends Component {
                             <Card variant="outlined" sx={{maxWidth: 400}}>
                                 <CardHeader
                                     title="Item Manage"
-                                    subheader="September 14, 2016"
+                                    subheader="July 11, 2022"
                                 />
                                 <CardMedia
                                     component="img"
@@ -126,10 +132,8 @@ class Home extends Component {
                                     alt="Paella dish"
                                 />
                                 <CardContent>
-                                    <Typography variant="body2" color="text.secondary">
-                                        This impressive paella is a perfect party dish and a fun meal to cook
-                                        together with your guests. Add 1 cup of frozen peas along with the mussels,
-                                        if you like.
+                                    <Typography variant="h2" color="text.secondary">
+                                       06
                                     </Typography>
                                 </CardContent>
                                 <CardContent>
@@ -156,7 +160,7 @@ class Home extends Component {
                             <Card variant="outlined" sx={{maxWidth: 400}}>
                                 <CardHeader
                                     title="Order Manage"
-                                    subheader="September 14, 2016"
+                                    subheader="July 11, 2022"
                                 />
                                 <CardMedia
                                     component="img"
@@ -165,10 +169,8 @@ class Home extends Component {
                                     alt="Paella dish"
                                 />
                                 <CardContent>
-                                    <Typography variant="body2" color="text.secondary">
-                                        This impressive paella is a perfect party dish and a fun meal to cook
-                                        together with your guests. Add 1 cup of frozen peas along with the mussels,
-                                        if you like.
+                                    <Typography variant="h2" color="text.secondary">
+                                        12
                                     </Typography>
                                 </CardContent>
                                 <CardContent>
@@ -190,7 +192,6 @@ class Home extends Component {
                         </Grid>
                     </div>
                 </div>
-                {/*</Link>*/}
 
             </div>
         )
