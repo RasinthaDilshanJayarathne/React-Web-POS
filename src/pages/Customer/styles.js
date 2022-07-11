@@ -3,7 +3,7 @@ export const styleSheet ={
         display: 'flex',
         flexWrap: 'wrap',
         flexDirection: 'column',
-        height: '90vh',
+        height: '100vh',
         width: '100vw',
         //backgroundColor: 'blue'
     },
@@ -21,7 +21,7 @@ export const styleSheet ={
         display: 'flex',
         flexWrap: 'wrap',
         flexDirection: 'row',
-        height: '80vh',
+        height: '90vh',
         width: '100vw',
         //backgroundColor: 'yellow'
     },

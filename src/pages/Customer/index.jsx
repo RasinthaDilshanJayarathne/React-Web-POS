@@ -4,9 +4,9 @@ import {withStyles} from "@mui/styles";
 import {Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography} from "@mui/material";
 import TextField from '@mui/material/TextField';
 import Grid from '@mui/material/Grid';
-import Autocomplete from '@mui/material/Autocomplete';
 import GDSEButton from "../../components/common/Button"
 import Paper from '@mui/material/Paper';
+import {Link} from "react-router-dom";
 
 class Customer extends Component {
     constructor(props) {
@@ -49,6 +49,15 @@ class Customer extends Component {
                     <Typography variant="h4">
                         Customer Manage
                     </Typography>
+                    <Link to="/">
+                        <GDSEButton size="small" variant="contained" label="Home"
+                                    onClick={() => {
+
+                                    }}
+                                    style={{marginLeft: '15px',marginTop:'-5px'}}
+                        />
+                    </Link>
+
                 </div>
                 <div className={classes.text_form}>
                     <div className={classes.text_field}>

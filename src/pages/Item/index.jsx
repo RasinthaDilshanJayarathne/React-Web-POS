@@ -7,6 +7,7 @@ import Grid from '@mui/material/Grid';
 import Autocomplete from '@mui/material/Autocomplete';
 import GDSEButton from "../../components/common/Button"
 import Paper from '@mui/material/Paper';
+import {Link} from "react-router-dom";
 
 class Item extends Component {
     constructor(props) {
@@ -26,7 +27,6 @@ class Item extends Component {
                 qtyOnHand:''
             }
         }
-
     }
 
     saveItem(){
@@ -53,6 +53,14 @@ class Item extends Component {
                     <Typography variant="h4">
                         Item Manage
                     </Typography>
+                    <Link to="/">
+                        <GDSEButton size="small" variant="contained" label="Home"
+                                    onClick={() => {
+
+                                    }}
+                                    style={{marginLeft: '15px',marginTop:'-5px'}}
+                        />
+                    </Link>
                 </div>
                 <div className={classes.text_form}>
                     <div className={classes.text_field}>

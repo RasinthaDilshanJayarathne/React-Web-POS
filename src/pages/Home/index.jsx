@@ -30,26 +30,15 @@ class Home extends Component {
         const {classes} = this.props
         return (
             <div className={classes.container}>
-
-
                 <div className={classes.nav_bar}>
                     <Grid>
                         <div className={classes.nav_title}>
                             <Typography variant="h4"
-
                             >
                                 React Web POS System
                             </Typography>
                         </div>
                         <div className={classes.nav_btn}>
-                            <Link to="/">
-                                <GDSEButton size="small" variant="contained" label="Home"
-                                            onClick={() => {
-
-                                            }}
-                                            style={{marginLeft: '15px',marginTop:'2px'}}
-                                />
-                            </Link>
                             <Link to="/customer">
                                 <GDSEButton size="small" variant="contained" label="Customer"
                                             onClick={() => {
