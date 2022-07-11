@@ -2,7 +2,7 @@ Using React Front End Frame Work
 
 Dashboard 🎫
 
-![Screenshot (1159)](https://user-images.githubusercontent.com/87766409/178173192-e5e7c8c1-0124-4e8a-b7fe-fb613d0b17a2.png)
+![Screenshot (1162)](https://user-images.githubusercontent.com/87766409/178185337-433cd805-49ce-4db2-bb32-841c09420549.png)
 
 Customer Page 👩🏼‍🤝‍👩🏻
 
