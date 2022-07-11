@@ -8,12 +8,25 @@ export const styleSheet = {
 
     },
     nav_bar:{
-        backgroundColor: 'yellow',
         display: 'flex',
         flexWrap: 'wrap',
-        flexDirection: 'column',
+        flexDirection: 'row',
         height: '10vh',
-        width: '100vw'
+        width: '100vw',
+        alignItems:'left',
+        justifyContent:'center',
+    },
+
+    nav_title:{
+        display: 'flex',
+        alignItems:'left',
+        justifyContent:'center',
+    },
+
+    nav_btn:{
+        display: 'flex',
+        flexWrap: 'wrap',
+        flexDirection: 'row',
     },
 
     load_container:{

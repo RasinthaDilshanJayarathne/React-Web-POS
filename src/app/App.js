@@ -6,9 +6,9 @@ import Customer from "../pages/Customer";
 function App() {
   return (
       <div className={App}>
-          {/*<Home/>*/}
+          <Home/>
          {/* <Item/>*/}
-          <Customer/>
+         {/* <Customer/>*/}
       </div>
       /*<Routes>
           <Route exact path='/' element={<Home/>}/>
