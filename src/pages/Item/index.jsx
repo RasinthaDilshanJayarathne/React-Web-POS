@@ -23,7 +23,6 @@ class Item extends Component {
                 name:'',
                 price:'',
                 packSize:'',
-                description:'',
                 qtyOnHand:''
             }
         }
@@ -36,17 +35,17 @@ class Item extends Component {
 
     render() {
 
-        function createData(code, name, price, packSize, description, qtyOnHand) {
-            return {code, name, price, packSize, description, qtyOnHand};
+        function createData(code, name, price, packSize, qtyOnHand) {
+            return {code, name, price, packSize, qtyOnHand};
         }
 
         const {classes} = this.props
         const rows = [
-            createData('I00-001', 'Frozen yoghurt', 150.0, 'Large', 'AAAAAA', 4),
-            createData('I00-002', 'Ice cream sandwich', 200.0, 'Small', 'BBBBB', 3),
-            createData('I00-003', 'Eclair', 350.0, 16.0, 'CCCCC', 6),
-            createData('I00-004', 'Cupcake', 450.0, 'Medium', 'DDDDDD', 2),
-            createData('I00-005', 'Gingerbread', 500.0, 'Large', 'EEEEEEE', 9),
+            createData('I00-001', 'Frozen yoghurt', 150.0, 'Large', 4),
+            createData('I00-002', 'Ice cream sandwich', 200.0, 'Small', 3),
+            createData('I00-003', 'Eclair', 350.0, 16.0, 6),
+            createData('I00-004', 'Cupcake', 450.0, 'Medium', 2),
+            createData('I00-005', 'Gingerbread', 500.0, 'Large', 9),
         ];
         return (
             <div className={classes.container}>
@@ -103,16 +102,16 @@ class Item extends Component {
                                         (option) => option.label
                                     }
                                     onChange={(e, value) => {
-                                        console.log(e.target.value)
+                                       /* console.log(e.target.value)
                                         let formData = this.state.formData
-                                        formData.packSize = e.target.valueOf()
-                                        this.setState({ formData })
+                                        formData.packSize = e.target.valueOf(e.target)
+                                        this.setState({ formData })*/
                                     }}
                                     size="small"
                                     style={{width: '100%'}}
                                 />
                             </Grid>
-                            <Grid item lg={6} md={6} sm={6} xm={6}>
+                           {/* <Grid item lg={6} md={6} sm={6} xm={6}>
                                 <TextField id="outlined-basic" placeHolder="Description" label="Description"
                                            variant="outlined" size="small"
                                            onChange={(e) =>{
@@ -123,7 +122,7 @@ class Item extends Component {
                                            }}
                                            style={{width: '100%'}}
                                 />
-                            </Grid>
+                            </Grid>*/}
                             <Grid item lg={6} md={6} sm={6} xm={6}>
                                 <TextField id="outlined-basic" placeHolder="Qty On Hand" label="Qty On Hand"
                                            variant="outlined" size="small"
@@ -146,32 +145,32 @@ class Item extends Component {
                         </Grid>
                     </div>
                     <div className={classes.table_field}>
-                        <TableContainer component={Paper}>
-                            <Table sx={{minWidth: 650}} aria-label="simple table">
-                                <TableHead>
-                                    <TableRow>
-                                        <TableCell>Code&nbsp;</TableCell>
-                                        <TableCell align="right">Name&nbsp;</TableCell>
-                                        <TableCell align="right">Price&nbsp;</TableCell>
-                                        <TableCell align="right">Pack Size&nbsp;</TableCell>
-                                        <TableCell align="right">Description&nbsp;</TableCell>
-                                        <TableCell align="right">Qty On Hand&nbsp;</TableCell>
-                                    </TableRow>
-                                </TableHead>
-                                <TableBody>
-                                    {rows.map((row) => (
-                                        <TableRow key={row.name} sx={{'&:last-child td, &:last-child th': {border: 0}}}>
-                                            <TableCell component="th" scope="row">{row.code}</TableCell>
-                                            <TableCell align="right">{row.name}</TableCell>
-                                            <TableCell align="right">{row.price}</TableCell>
-                                            <TableCell align="right">{row.packSize}</TableCell>
-                                            <TableCell align="right">{row.description}</TableCell>
-                                            <TableCell align="right">{row.qtyOnHand}</TableCell>
+                        <Grid item lg={6} md={6} sm={6} xm={6}>
+                            <TableContainer component={Paper}>
+                                <Table sx={{minWidth: 650}} aria-label="simple table">
+                                    <TableHead>
+                                        <TableRow>
+                                            <TableCell>Code&nbsp;</TableCell>
+                                            <TableCell align="right">Name&nbsp;</TableCell>
+                                            <TableCell align="right">Price&nbsp;</TableCell>
+                                            <TableCell align="right">Pack Size&nbsp;</TableCell>
+                                            <TableCell align="right">Qty On Hand&nbsp;</TableCell>
                                         </TableRow>
-                                    ))}
-                                </TableBody>
-                            </Table>
-                        </TableContainer>
+                                    </TableHead>
+                                    <TableBody>
+                                        {rows.map((row) => (
+                                            <TableRow key={row.name} sx={{'&:last-child td, &:last-child th': {border: 0}}}>
+                                                <TableCell component="th" scope="row">{row.code}</TableCell>
+                                                <TableCell align="right">{row.name}</TableCell>
+                                                <TableCell align="right">{row.price}</TableCell>
+                                                <TableCell align="right">{row.packSize}</TableCell>
+                                                <TableCell align="right">{row.qtyOnHand}</TableCell>
+                                            </TableRow>
+                                        ))}
+                                    </TableBody>
+                                </Table>
+                            </TableContainer>
+                        </Grid>
                     </div>
                 </div>
             </div>
